@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100,400;0,100,700;0,112.5,300;1,100,400;1,100,700;1,112.5,300&display=swap')
+@font-face
+    font-family: 'ITC Garamond'   
+    src: url('../fonts/ITCGaramondStd-LtNarrow.woff2') format('woff2'),url('../fonts/ITCGaramondStd-LtNarrow.woff') format('woff')        
+    font-weight: 300
+    font-style: normal
+    font-display: swap
+@import "lib/vars"
+@import "lib/main"
+@import "lib/header"
+@import "lib/headerDetalles"
+@import "lib/mainDetalles"
+
+// *
+//     border: 1px solid red
+
+html, 
+body
+    margin: 0
+    padding: 0
+    min-height: 100vh
+    width: 100vw
+    justify-content: center
+
+
+.app 
+    min-height: 100vh
+    display: grid
+    grid-template-areas: "head head" "main main"
+    grid-template-rows: 15% 1fr
+    grid-template-columns: 100vw
+    overflow-x: hidden
+    &::-webkit-scrollbar 
+        width: 0px
+
+.app > header
+    grid-area: head
+
+.app > main
+    grid-area: main
+    // background-color: $purple
+
+
+

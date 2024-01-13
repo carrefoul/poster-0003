@@ -1,0 +1,63 @@
+header
+    display: flex
+    flex-direction: row
+    padding: 20px 80px
+    justify-content: space-between
+    align-items: center
+    .logo
+        width: 80px
+        img
+            width: 100%
+    .nrAnuarioBox
+        display: flex
+        flex-direction: row
+        gap: 30px
+        .tituloPoster
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: $white
+            width: 120px
+            height: 30px
+            border-radius: 90px
+            border: 1.2px solid $purple
+            transition: background-color 0.3s
+            a
+                text-decoration: none
+                color: $black
+            &:hover
+                cursor: pointer
+                h2
+                    font-size: calc(#{$header} + 0.3rem)
+                    transition: font-size 0.3s
+            h2
+                margin: 0
+                font-family: $archivo
+                font-stretch: $semiExpanded
+                font-weight: $light
+                font-size: $header
+                transition: font-size 0.3s
+        .nrAnuario
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 80px
+            height: 30px
+            background-color: $white
+            border-radius: 50px
+            border: 1.2px solid $purple
+            a
+                text-decoration: none
+                color: $black
+            &:hover
+                cursor: pointer
+                p
+                    font-size: calc(#{$header} + 0.2rem)
+                    transition: font-size 0.3s
+            p
+                font-family: $archivo
+                font-stretch: $semiExpanded
+                font-style: $italic
+                font-size: $header
+                margin: 0px
+                transition: font-size 0.3s

@@ -1,0 +1,41 @@
+.header
+    display: flex
+    flex-direction: row
+    padding: 80px
+    justify-content: space-between
+    align-items: center
+    background-color: $purple
+    .logo
+        width: 80px
+        img
+            width: 100%
+    .nrAnuarioBox
+        display: flex
+        flex-direction: row
+        gap: 30px
+        .nrAnuario
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 80px
+            height: 30px
+            background-color: $white
+            border-radius: 50px
+            border: 1.2px solid $black
+            a
+                text-decoration: none
+                color: $black
+            &:hover
+                cursor: pointer
+                p
+                    font-size: calc(#{$header} + 0.2rem)
+                    transition: font-size 0.3s
+            p
+                font-family: $archivo
+                font-stretch: $semiExpanded
+                font-style: $italic
+                font-size: $header
+                margin: 0px
+                transition: font-size 0.3s
+
+
